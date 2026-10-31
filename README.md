@@ -1,6 +1,6 @@
 # SmartCart Churn Predictor
 
-**Project 001 of 100 · Retail & commerce · Classification**
+**Project Retail & commerce · Classification**
 
 A standalone, runnable AI/ML project with its own saved fitted model, prediction API, and browser GUI. Its primary workflow is **SmartCart Churn Predictor · Scenario comparison**. The feature fields, target, model, and project-specific control are configured for this use case.
 
