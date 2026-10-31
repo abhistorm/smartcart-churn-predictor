@@ -1,0 +1,54 @@
+{
+  "id": "001",
+  "slug": "001-smartcart-churn-predictor",
+  "name": "SmartCart Churn Predictor",
+  "domain": "Retail & commerce",
+  "domain_slug": "retail-commerce",
+  "task_type": "classification",
+  "target": "p001_smartcart_churn_predictor_outcome_label",
+  "features": [
+    "p001_smartcart_churn_predictor_monthly_visits",
+    "p001_smartcart_churn_predictor_average_order_value",
+    "p001_smartcart_churn_predictor_discount_rate",
+    "p001_smartcart_churn_predictor_cart_abandonment_rate",
+    "p001_smartcart_churn_predictor_days_since_last_purchase",
+    "p001_smartcart_churn_predictor_support_contacts",
+    "p001_smartcart_churn_predictor_return_rate",
+    "p001_smartcart_churn_predictor_loyalty_points",
+    "p001_smartcart_churn_predictor_delivery_delay_days",
+    "p001_smartcart_churn_predictor_inventory_availability"
+  ],
+  "model_key": "logistic-regression",
+  "model_class": "LogisticRegression",
+  "serving": "FastAPI",
+  "extension_focus": "MLflow experiment tracking",
+  "seed": 202601,
+  "rows": 458052,
+  "dataset_bytes": 39850408,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "accuracy": 0.944,
+      "macro_f1": 0.944,
+      "roc_auc": 0.9905
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "scenario",
+    "title": "SmartCart Churn Predictor · Scenario comparison",
+    "description": "Compare the current estimate with a one-feature what-if scenario. This panel is tuned to SmartCart Churn Predictor and its p001 smartcart churn predictor monthly visits signal.",
+    "focus_feature": "p001_smartcart_churn_predictor_monthly_visits",
+    "mode_title": "Scenario comparison"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 2363
+}

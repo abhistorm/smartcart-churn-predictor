@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p001_smartcart_churn_predictor_monthly_visits": 0.0,
+    "p001_smartcart_churn_predictor_average_order_value": 0.0,
+    "p001_smartcart_churn_predictor_discount_rate": 0.0,
+    "p001_smartcart_churn_predictor_cart_abandonment_rate": 0.0,
+    "p001_smartcart_churn_predictor_days_since_last_purchase": 0.0,
+    "p001_smartcart_churn_predictor_support_contacts": 0.0,
+    "p001_smartcart_churn_predictor_return_rate": 0.0,
+    "p001_smartcart_churn_predictor_loyalty_points": 0.0,
+    "p001_smartcart_churn_predictor_delivery_delay_days": 0.0,
+    "p001_smartcart_churn_predictor_inventory_availability": 0.0
+  }
+}
